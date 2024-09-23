@@ -1,0 +1,1 @@
+Én a felhasználó vagyok az én feladatom az az, hogy felhasználó fiók adatait kezelhesse.

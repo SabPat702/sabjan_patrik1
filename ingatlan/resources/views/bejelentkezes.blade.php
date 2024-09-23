@@ -1,0 +1,1 @@
+Én a bejelentkezés vagyok az én feladatom az az, hogy azonosítsam a felhasználót egy elmentett fiókkal, hogy hozzá férhessen a weboldalhoz.

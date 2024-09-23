@@ -1,0 +1,1 @@
+Én a bemutakozás vagyok és a feldatom az, hogy megmutassam a weboldalt és mire használható.
