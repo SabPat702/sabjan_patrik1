@@ -1,1 +1,5 @@
-Én a bemutakozás vagyok és a feldatom az, hogy megmutassam a weboldalt és mire használható.
+<body>
+    <div>Hi, <?php echo $name; ?></div>
+    <div>Hi, <?= $name ?></div>
+    <div>Hi, {{ $name }}</div>
+</body>

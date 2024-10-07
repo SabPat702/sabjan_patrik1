@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
-    return view('bemutatkozas');
+    $username = 'John';
+    return view('bemutatkozas', ['name' => $username]);
 });
+//Route::view('/', 'welcome', ['name' => 'John']); <--hibás ?
 
 Route::get('/felhasznalo', function () {
     return view('felhasznalo');
@@ -24,3 +28,20 @@ Route::get('/felhasznalo', function () {
 Route::get('/bejelentkezes', function () {
     return view('bejelentkezes');
 });
+
+Route::get('/pass-array', function () {
+    $tasks = [
+        'Go to the store',
+        'Go to the market',
+        'Go to the work'
+    ];
+    $foobar = 'foobar';
+    //return view('tasklist', ['tasks' => $tasks]);
+    //return view('tasklist')->withTasks($tasks)->withFoo($foobar);
+    return view('tasklist')->with([
+        'foo' => $foobar,
+        'tasks' => $tasks
+    ]);
+});
+
+
